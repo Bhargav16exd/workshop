@@ -12,12 +12,9 @@ API DOCUMENTATION : https://sunny-september-5c1.notion.site/API-Documentation-14
   - Create a new user.
   - Login and logout users.
   - Fetch all users.
-  - Assign or remove roles (Admin).
-  - Ban or unban users.
 
 - **Blog Management**
   - Add a new blog.
-  - Delete a blog with RBAC (only Admin, Moderator, or the blog owner).
   - Fetch all blogs.
 
 - **Audit Logs**
@@ -35,7 +32,7 @@ API DOCUMENTATION : https://sunny-september-5c1.notion.site/API-Documentation-14
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/Bhargav16exd/log
+   git clone https://github.com/Bhargav16exd/workshop
    ```
    
 2. Navigate to the project directory:
