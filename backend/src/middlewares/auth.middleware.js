@@ -33,10 +33,7 @@ export const authMiddleware = async (req,res,next)=>{
           if(!user){
             throw new errResponse("User not found",400)
           }
-
-          if(user.ban == true){
-            throw new errResponse("Sorry you cannot access",400)
-          }
+          
 
           req.user = user
           next()
@@ -46,19 +43,4 @@ export const authMiddleware = async (req,res,next)=>{
         next(error)
     }
 
-}
-
-//Admin Middleware check if the current user is admin if not return
-export const adminMiddleware = async (req,res,next)=>{
-    try {
-        
-        if(req.user.role !== "ADMIN"){
-            throw new errResponse("Unauthorized",401)
-        }
-
-        next()
-        
-    } catch (error) {
-        next(error)
-    }
 }

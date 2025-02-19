@@ -22,6 +22,8 @@ export const createUser = async(req,res,next) => {
     }
 }
 
+
+
 // Login a user
 export const loginUser = async(req,res,next) => {
 
